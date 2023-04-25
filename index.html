@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Final Semester Project</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-pepper-hot"></i>La Cocina</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#popular">Popular</a>
+            <a href="#menu">Menu</a>
+            <!-- <a href="#order">Order</a>
+            <a href="#blog">Blog</a> -->
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <!-- <div id="search-btn" class="fas fa-search"></div> -->
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+    </header>
+
+
+
+    <section class="shopping-cart-container">
+        <div class="product-container">
+            <h3 class="title">Your Products</h3>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <img src="image/menu-1.png" alt="">
+                    <div class="content">
+                        <h3>Delicious Food</h3>
+                        <span>Quantity : </span>
+                        <input type="number" value="1">
+                        <br>
+                        <span>price : </span>
+                        <span class="price">Rs 40.00</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <img src="image/menu-2.png" alt="">
+                    <div class="content">
+                        <h3>Delicious Food</h3>
+                        <span>Quantity : </span>
+                        <input type="number" value="1">
+                        <br>
+                        <span>price : </span>
+                        <span class="price">Rs 40.00</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-times"></i>
+                    <img src="image/menu-3.png" alt="">
+                    <div class="content">
+                        <h3>Delicious Food</h3>
+                        <span>Quantity : </span>
+                        <input type="number" value="1">
+                        <br>
+                        <span>price : </span>
+                        <span class="price">Rs 40.00</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cart-total">
+            <h3 class="title">Cart Total</h3>
+            <div class="box">
+                <h3 class="subtotal">Subtotal : <span>Rs 160.00</span></h3>
+                <h3 class="subtotal">Total : <span>Rs 160.00</span></h3>
+                <a href="#" class="btn">Proceed to checkout</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="login-form-container">
+        <form>
+            <h3>login form</h3>
+            <input type="email" placeholder="Enter your mail" class="box">
+            <input type="Password" placeholder="Enter your password" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <input type="submit" value="Login Now" class="btn">
+            <p>forget password? <a href="#">click here</a></p>
+            <p>Don't have an account? <a href="#">create one</a></p>
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <section class="home" id="home">
+        <div class="content">
+            <span>welcome foodies</span>
+            <h3>different spices for different tastes</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tenetur earum natus nihil magnam,
+                vitae sit. A quisquam placeat ratione ab harum. Incidunt assumenda asperiores corporis suscipit quam.
+                Cumque, id.</p>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="image">
+            <img src="image/home-img.png" alt="" class="home-img">
+            <img src="image/home-parallax-img.png" alt="" class="home-parallax-img">
+        </div>
+    </section>
+
+
+<section class="category">
+    <a href="#" class="box">
+        <img src="image/cat-1.png" alt="">
+        <h3>Combo</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="image/cat-2.png" alt="">
+        <h3>Pizza</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="image/cat-3.png" alt="">
+        <h3>Burger</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="image/cat-4.png" alt="">
+        <h3>Chicken</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="image/cat-5.png" alt="">
+        <h3>Dinner</h3>
+    </a>
+    <a href="#" class="box">
+        <img src="image/cat-6.png" alt="">
+        <h3>Coffee</h3>
+    </a>
+</section>
+
+
+
+
+</body>
+
+</html>
+<script src="script.js"></script>
