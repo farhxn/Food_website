@@ -535,6 +535,195 @@ section {
   padding-top: 0.5rem;
 }
 
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.menu .box-container .box {
+  border-radius: 0.5rem;
+  background: #f7f7f7;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.menu .box-container .box:hover {
+  background: #130f40;
+}
+.menu .box-container .box:hover .content .price,
+.menu .box-container .box:hover .content h3 {
+  color: #fff;
+}
+.menu .box-container .box img {
+  height: 10rem;
+}
+.menu .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #130f40;
+  padding-bottom: 0.5rem;
+}
+.menu .box-container .box .content .price {
+  font-size: 1rem;
+  color: #800080;
+}
+
+.order .icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.order .icons-container .icons {
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  background: #f7f7f7;
+}
+.order .icons-container .icons img {
+  height: 10rem;
+}
+.order .icons-container .icons h3 {
+  font-size: 2rem;
+  color: #130f40;
+  margin-top: 0.5rem;
+}
+.order form {
+  background: #f7f7f7;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.order form .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.order form .flex .inputbox {
+  width: 49%;
+  padding: 0.7rem 0;
+}
+.order form .flex span {
+  font-size: 1.7rem;
+  color: #666;
+}
+.order form .flex input,
+.order form .flex textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  text-transform: none;
+  color: #130f40;
+}
+.order form .flex textarea {
+  height: 20rem;
+  resize: none;
+}
+.order form .flex .mop {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.footer {
+  background: #f7f7f7;
+}
+.footer .newsletter {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.footer .newsletter h3 {
+  font-size: 2.5rem;
+  color: #130f40;
+  padding-bottom: 1rem;
+}
+.footer .newsletter form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  max-width: 70rem;
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.footer .newsletter form input[type=email] {
+  height: 100%;
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  color: #130f40;
+  text-transform: none;
+}
+.footer .newsletter form input[type=submit] {
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background: #800080;
+  cursor: pointer;
+}
+.footer .newsletter form input[type=submit]:hover {
+  background: #130f40;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box {
+  font-size: 2.2rem;
+  color: #130f40;
+  padding: 1rem 0;
+}
+.footer .box-container p {
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem 0;
+}
+.footer .box-container a {
+  display: block;
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem 0;
+}
+.footer .box-container a:hover {
+  color: #800080;
+}
+.footer .box-container a:hover i {
+  padding-right: 2rem;
+}
+.footer .box-container a i {
+  padding-right: 0.5rem;
+  color: #800080;
+}
+.footer .bottom {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.footer .bottom .share {
+  margin: 1.5rem 0;
+}
+.footer .bottom .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  margin: 0 0.3rem;
+  color: #fff;
+  background: #800080;
+}
+.footer .bottom .share a:hover {
+  background: #130f40;
+}
+.footer .bottom .credit {
+  font-size: 2rem;
+  color: #666;
+  padding: 1rem;
+}
+.footer .bottom .credit span {
+  color: #800080;
+}
+
 @media (max-width: 768px) {
   #menu-btn {
     display: inline-block;
@@ -564,6 +753,9 @@ section {
     left: 0;
     width: 130%;
   }
+  .order form .flex .inputbox {
+    width: 100%;
+  }
 }
 @media (max-width: 991px) {
   html {
@@ -592,4 +784,4 @@ section {
   .home .content p {
     font-size: 1.5rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
